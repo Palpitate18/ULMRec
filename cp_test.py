@@ -42,7 +42,6 @@ def main(args, export_root=None):
 
     trainer = LLMTrainer(args, model, test_loader, tokenizer, export_root, args.use_wandb)
 
-    # 直接进行测试
     trainer.test(test_retrieval)
 
 
